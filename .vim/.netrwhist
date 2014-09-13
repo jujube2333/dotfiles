@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/usr/include'
+let g:netrw_dirhist_2='/home/caterpie/documents/aoj'
+let g:netrw_dirhist_3='/home/caterpie/.vim/autoload/quickrun'
+let g:netrw_dirhist_4='/home/caterpie/grive/haskell'
+let g:netrw_dirhist_5='/home/caterpie/git/vim2hs/autoload/vim2hs'
+let g:netrw_dirhist_6='/home/caterpie/.vim/bundle/vim-hybrid'
