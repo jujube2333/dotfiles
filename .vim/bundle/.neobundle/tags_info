@@ -3,6 +3,5 @@ tcomment_vim
 unite-colorscheme
 unite.vim
 vim-autoclose
-vim-indent-guides
 vim-quickrun
 vim2hs

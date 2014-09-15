@@ -1,7 +1,7 @@
 set nocompatible
 
 "NeoBundle start
-set runtimepath+=$HOME/.vim/bandle/neobundle.vim/
+set runtimepath+=$HOME/.vim/bundle/neobundle.vim/
 call neobundle#begin(expand('~/.vim/bundle/'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
@@ -19,7 +19,7 @@ NeoBundle 'ujihisa/unite-colorscheme'
 "複数行comment in/out
 NeoBundle 'tomtom/tcomment_vim'
 "indent-guide
-NeoBundle 'nathanaelkane/vim-indent-guides'
+" NeoBundle 'nathanaelkane/vim-indent-guides'
 
 call neobundle#end()
 
@@ -36,10 +36,10 @@ set softtabstop=4
 "1インデント目からguide
 let g:indent_guides_start_level=1
 "colorを手動設定
-let g:indent_guides_auto_colors=1
+let g:indent_guides_auto_colors=0
 "color設定(何故か機能しない)
 hi IndentGuidesOdd  ctermbg=darkgray
-hi IndentGuidesEven ctermbg=darkgray
+hi IndentGuidesEven ctermbg=gray
 "vim起動と同時にguide
 let g:indent_guides_enable_on_vim_startup=1
 "guide幅

@@ -1,0 +1,3 @@
+XTerm*background : black
+XTerm*foreground : gray
+XTerm*faceSize   : 11
