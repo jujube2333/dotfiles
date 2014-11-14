@@ -1,9 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/usr/include'
-let g:netrw_dirhist_2='/home/caterpie/documents/aoj'
-let g:netrw_dirhist_3='/home/caterpie/.vim/autoload/quickrun'
-let g:netrw_dirhist_4='/home/caterpie/grive/haskell'
-let g:netrw_dirhist_5='/home/caterpie/git/vim2hs/autoload/vim2hs'
-let g:netrw_dirhist_6='/home/caterpie/.vim/bundle/vim-hybrid'
-let g:netrw_dirhist_7='/home/jujube/.xmobar'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/caterpie/grive'
+let g:netrw_dirhist_2='/home/caterpie/grive/picoctf2014'
+let g:netrw_dirhist_3='/home/caterpie/grive/picoctf2014/execute_me'
+let g:netrw_dirhist_4='/home/caterpie/grive/picoctf2014/execute_me/asmtest'
+let g:netrw_dirhist_5='/home/caterpie/grive/ksnctf/q28_lo_tech_cipher/output/zip'

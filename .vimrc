@@ -20,6 +20,9 @@ NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'tomtom/tcomment_vim'
 "indent-guide
 " NeoBundle 'nathanaelkane/vim-indent-guides'
+"python補完
+NeoBundle 'davidhalter/jedi-vim'
+NeoBundle 'Yggdroot/indentLine'
 
 call neobundle#end()
 
@@ -33,23 +36,30 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 
-"1インデント目からguide
-let g:indent_guides_start_level=1
-"colorを手動設定
-let g:indent_guides_auto_colors=0
-"color設定(何故か機能しない)
-hi IndentGuidesOdd  ctermbg=darkgray
-hi IndentGuidesEven ctermbg=gray
-"vim起動と同時にguide
-let g:indent_guides_enable_on_vim_startup=1
-"guide幅
-let g:indent_guides_guide_size=1
+" "1インデント目からguide
+" let g:indent_guides_start_level=1
+" "colorを手動設定
+" let g:indent_guides_auto_colors=0
+" "color設定(何故か機能しない)
+" hi IndentGuidesOdd  ctermbg=darkgray
+" hi IndentGuidesEven ctermbg=gray
+" "vim起動と同時にguide
+" let g:indent_guides_enable_on_vim_startup=1
+" "guide幅
+" let g:indent_guides_guide_size=1
 " let g:indent_guides_guide_size=&tabstop
+" rename用のマッピングを無効にしたため、代わりにコマンドを定義
+command! -nargs=0 JediRename :call jedi#rename()
+" pythonのrename用のマッピングがquickrunとかぶるため回避させる
+let g:jedi#rename_command = ""
+let g:jedi#documentation_command = "k"
+" docstringは表示しない
+autocmd FileType python setlocal completeopt-=preview
 
 set background=dark
 set number
 set ruler
-set cursorline
+" set cursorline
 " set cursorcolumn
 set laststatus=2
 set showmatch
